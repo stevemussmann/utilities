@@ -1,6 +1,18 @@
 # utilities
 random scripts for processing genetic data that don't fit in my other repositories
 
+## missingData.sh
+Returns the proportion of missing data per individual for a VCF file. Requires bcftools to be installed on your system. Command line arguments are position based, with the first position being the input file and the second being the output file. For example:
+```
+./missingData.sh input.vcf output.missing.txt
+```
+
+## seqDepth.sh
+Similar to missingData.sh. Returns the sequencing depth per individual for a VCF file that includes the 'DP' field. Requires bcftools to be installed on your system. Command line arguments are position based, with the first position being the input file and the second being the output file. For example:
+```
+./seqDepth.sh input.vcf output.depth.txt
+```
+
 ## findColumnNumbers.sh
 Returns the column numbers from a large starbeast3 log file. For example, the following command would provide the column numbers of the columns pertaining to estimated node ages:
 ```
