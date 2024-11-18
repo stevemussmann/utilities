@@ -323,7 +323,7 @@ sub help{
   print "\t\t[ -h | -f | -o ]\n\n";
   print "\t-h:\tDisplay this help message.\n";
   print "\t\tThe program will die after the help message is displayed.\n\n";
-  print "\t-f:\tSpecify the name of the input file.\n\n";
+  print "\t-f:\tSpecify the name of the input file (tab-delimited format).\n\n";
   print "\t-o:\tSpecify output file (Optional).\n\n";
   
 }
