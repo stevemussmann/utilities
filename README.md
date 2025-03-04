@@ -30,3 +30,9 @@ Returns a population map of the individuals from a vcf file that have the least 
 ```
 ./extractLeastMissing.pl -f missing.txt -m allSamples.map.txt
 ```
+
+## countRestrictionCutSites.pl
+Returns the number of times a restriction cut site appears in a genome, when given a genome in fasta format and a restriction cut site sequence (e.g., CTGCAG for PstI).
+```
+./countRestrictionCutSites.pl -f ReferenceGenome.fasta -r CTGCAG
+```
