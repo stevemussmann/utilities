@@ -94,7 +94,7 @@ my @lines; # hold lines from input file
 
 # capture header from file
 my $header = shift( @lines );
-my @head = split( /\s+/, $header );
+my @head = split( /\t/, $header );
 
 # make new header for only loci that will be printed out
 my @newhead;
