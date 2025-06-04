@@ -36,3 +36,8 @@ Returns the number of times a restriction cut site appears in a genome, when giv
 ```
 ./countRestrictionCutSites.pl -f ReferenceGenome.fasta -r CTGCAG
 ```
+## md5check.sh
+Download this script to a folder containing a set of files and their md5 hashes. Run the script as shown below:
+```
+./md5check.sh
+```
