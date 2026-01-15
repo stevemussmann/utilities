@@ -41,3 +41,9 @@ Download this script to a folder containing a set of files and their md5 hashes.
 ```
 ./md5check.sh
 ```
+
+## popSumSeqStats.pl
+Calculates summary stats per population for outputs of seqDepth.sh and missingData.sh scripts
+```
+./popSumSeqStats.pl -f missing.txt -m popmap.txt -o popMissing.txt
+```
