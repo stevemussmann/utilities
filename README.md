@@ -47,3 +47,10 @@ Calculates summary stats per population for outputs of seqDepth.sh and missingDa
 ```
 ./popSumSeqStats.pl -f missing.txt -m popmap.txt -o popMissing.txt
 ```
+
+# One-liners
+
+## count barcodes in Undertermined fastq file
+```
+zcat Undetermined_S0_L001_R1_001.fastq.gz | grep "^@" | awk '{print $2}' | awk -F":" '{count[$4]++} END {for (word in count) print word, count[word]}' | sort -n -k2
+```
