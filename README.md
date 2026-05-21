@@ -1,6 +1,9 @@
 # utilities
 random scripts for processing genetic data that don't fit in my other repositories
 
+## gtseq_pipeline_v3.sh
+Runs the `GTseq_Genotyper_v3.pl` portion of the GTseq pipeline in parallel. Place it in the directory containing the fastq files from your GTseq run and modify lines 4 and 7 to specify your probe file and output file names. It assumes that `parallel`, the `GTseq_Genotyper_v3.pl` script, and the `GTseq_GenoCompile_v3.pl` script are already installed on your computer. 
+
 ## missingData.sh
 Returns the proportion of missing data per individual for a VCF file. Requires bcftools to be installed on your system. Command line arguments are position based, with the first position being the input file and the second being the output file. For example:
 ```
